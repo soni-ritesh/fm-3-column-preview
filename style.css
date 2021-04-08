@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --orange-bright: hsl(31, 77%, 52%);
+  --cyan-dark: hsl(184, 100%, 22%);
+  --cyan-very-dark: hsl(179, 100%, 13%);
+  --gray-1: hsl(0, 0%, 95%);
+  --white-transparent: hsla(0, 0%, 100%, 0.75);
+}
+
+.vehicle-types {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+
+.vehicle-type-card {
+  max-width: 200px;
+  padding: 40px;
+}
+
+.vehicle-type-card a {
+  padding: 10px 30px;
+  border-radius: 500px;
+  background-color: var(--gray-1);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.vehicle-type-card.sedan a {
+  color: var(--orange-bright);
+}
+
+.vehicle-type-card.suv a {
+  color: var(--cyan-dark);
+}
+
+.vehicle-type-card.luxury a {
+  color: var(--cyan-very-dark);
+}
+
+.vehicle-type-card a:hover {
+  border: 1px solid var(--gray-1);
+  color: var(--gray-1);
+  background-color: transparent;
+}
+
+.vehicle-type-card.sedan {
+  background-color: var(--orange-bright)
+}
+
+.vehicle-type-card.suv {
+  background-color: var(--cyan-dark)
+}
+
+.vehicle-type-card.luxury {
+  background-color: var(--cyan-very-dark);
+}
+
+.vehicle-type-title {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+  color: var(--gray-1);
+  margin: 40px 0px;
+}
+
+.vehicle-type-details {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 80px;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
