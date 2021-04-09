@@ -6,6 +6,8 @@
   --cyan-very-dark: hsl(179, 100%, 13%);
   --gray-1: hsl(0, 0%, 95%);
   --white-transparent: hsla(0, 0%, 100%, 0.75);
+
+  --card-width: 200px;
 }
 
 .vehicle-types {
@@ -16,8 +18,15 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 400px)  {
+  .vehicle-types {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .vehicle-type-card {
-  max-width: 200px;
+  max-width: var(--card-width);
   padding: 40px;
 }
 
